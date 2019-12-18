@@ -1,6 +1,5 @@
 /*main settings*/
 body {
-    font-family: Source Sans Pro;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -32,6 +31,7 @@ body {
     color: #1A1A1A;
 }
 
+
 .navContainer .navBlueButton {
     background: #4B9FDD;
     border-radius: 22px;
@@ -44,6 +44,8 @@ body {
     display: flex;
     right: 100px;
     color: #FFFFFF;
+
+
 }
 
 /*footer*/
@@ -57,11 +59,11 @@ body {
     background-color: #1B4666;
 }
 
-.footerContainer .footerLogo{
+.footerContainer .footerLogo {
 
 }
 
-.footerContainer .footerTextContainer{
+.footerContainer .footerTextContainer {
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: auto auto auto;
@@ -71,13 +73,15 @@ body {
     line-height: 19px;
     color: #FFFFFF;
 }
-.bottomProperties{
+
+.bottomProperties {
     padding-top: 10px;
     display: flex;
     align-items: center;
     width: 100%;
 }
-.bottomProperties .date{
+
+.bottomProperties .date {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -88,16 +92,19 @@ body {
     text-align: left;
     color: #606060;
 }
-.bottomProperties .numbers{
+
+.bottomProperties .numbers {
     padding-right: 20px;
     font-size: 20px;
     line-height: 25px;
     color: #606060;
 }
-.bottomProperties .icon{
+
+.bottomProperties .icon {
     padding-right: 10px;
 }
-.bottomProperties .leftContainer{
+
+.bottomProperties .leftContainer {
     display: flex;
     width: 50%;
     justify-content: flex-end;
@@ -109,8 +116,6 @@ body {
     width: calc(100% - 160px);
     padding: 20px 80px;
 }
-
-
 
 
 .titleContainer {
@@ -164,4 +169,22 @@ body {
     justify-content: center;
     display: flex;
     color: #FFFFFF;
+}
+.burger{
+    display: none;
+}
+@media screen and (max-width: 1300px) {
+    .navContainer .navBlueButton {
+         display: none;
+    }
+    .navContainer .navButton{
+        display: none;
+    }
+    .burger{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        right: 20px;
+    }
 }
