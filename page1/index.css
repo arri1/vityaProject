@@ -1,3 +1,4 @@
+/*search*/
 .searchContainer {
     width: calc(100% - 160px);
     height: 140px;
@@ -20,7 +21,8 @@
     align-items: center;
 
 }
-.searchContainer .searchCategory{
+
+.searchContainer .searchCategory {
     display: flex;
     align-items: center;
     font-weight: 600;
@@ -28,9 +30,95 @@
     line-height: 25px;
     color: #606060;
 }
-.searchContainer .searchItem{
+
+.searchContainer .searchItem {
     padding-right: 50px;
 }
-.searchContainer .selectedItem{
+
+.searchContainer .selectedItem {
     text-decoration-line: underline;
+}
+
+/*content*/
+.contentContainer {
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: repeat(5, 360px);
+    grid-gap: 40px 30px;
+
+}
+
+.contentContainer .itemContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #FFFFFF;
+    height: 100%;
+    border-radius: 12px;
+    box-shadow: 0px 1px 15px rgba(27, 70, 102, 0.05);
+}
+
+.contentContainer .image {
+    border-radius: 12px 12px 0px 0px;
+    width: 100%;
+}
+.contentContainer .title{
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    color: #1A1A1A;
+}
+.contentContainer .bottomProperties{
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+.contentContainer .date{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    font-size: 18px;
+    line-height: 23px;
+    white-space: nowrap;
+    text-align: left;
+    color: #606060;
+}
+.contentContainer .numbers{
+    padding-right: 20px;
+    font-size: 20px;
+    line-height: 25px;
+    color: #606060;
+}
+.contentContainer .icon{
+    padding-right: 10px;
+}
+.contentContainer .leftContainer{
+    display: flex;
+    width: 50%;
+    justify-content: flex-end;
+    align-items: center;
+
+}
+.numbersContainer{
+    height: 75px;
+    align-items: center;
+    display: flex;
+}
+
+.numbersContainer .numbers{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+
+    color: #9FC9E8;
+}
+.numbersContainer .selected{
+    color: #4B9FDD;
 }
