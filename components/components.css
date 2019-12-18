@@ -180,17 +180,19 @@ body {
 .numbersContainer {
     height: auto;
     align-items: center;
-    justify-content: flex-start;
-    display: flex;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: auto auto auto auto 1fr;
+    grid-template-rows: auto;
+    grid-gap: 5px;
     width: 100%;
+
 }
 
 .numbersContainer .numbers {
     font-weight: 600;
     font-size: 20px;
     line-height: 25px;
-    padding-right: 5px;
-
     color: #9FC9E8;
 }
 
