@@ -73,39 +73,7 @@
     line-height: 30px;
     color: #1A1A1A;
 }
-.contentContainer .bottomProperties{
-    padding-top: 10px;
-    display: flex;
-    align-items: center;
-    width: 100%;
-}
-.contentContainer .date{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
-    font-size: 18px;
-    line-height: 23px;
-    white-space: nowrap;
-    text-align: left;
-    color: #606060;
-}
-.contentContainer .numbers{
-    padding-right: 20px;
-    font-size: 20px;
-    line-height: 25px;
-    color: #606060;
-}
-.contentContainer .icon{
-    padding-right: 10px;
-}
-.contentContainer .leftContainer{
-    display: flex;
-    width: 50%;
-    justify-content: flex-end;
-    align-items: center;
 
-}
 .numbersContainer{
     height: 75px;
     align-items: center;
