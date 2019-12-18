@@ -5,10 +5,15 @@
     display: flex;
     justify-content: center;
     margin: 20px 0px;
-    flex-direction: column;
     border-bottom: 1px solid rgba(26, 26, 26, 0.2);
 }
+.searchContainer .padding{
+    padding: 0 80px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 
+}
 .searchContainer .searchImage {
     position: relative;
     left: 0;
@@ -25,6 +30,7 @@
 .searchContainer .searchCategory {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     font-weight: 600;
     font-size: 20px;
     line-height: 25px;
@@ -74,28 +80,33 @@
     color: #1A1A1A;
 }
 
-.numbersContainer{
-    height: 75px;
-    align-items: center;
-    display: flex;
-}
 
-.numbersContainer .numbers{
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 25px;
-
-    color: #9FC9E8;
-}
-.numbersContainer .selected{
-    color: #4B9FDD;
-}
-@media screen and (max-width: 1300px) {
+@media screen and (max-width: 1300px) and (min-width: 800px) {
     .contentContainer {
         display: grid;
         grid-template-columns: 300px 300px ;
         grid-template-rows: repeat(8, auto);
         grid-gap: 40px 30px;
-
+    }
+    .searchContainer .padding{
+        padding: 0 10px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
     }
 }
+@media screen and (max-width: 800px) {
+    .contentContainer {
+        display: grid;
+        grid-template-columns: auto ;
+        grid-template-rows: repeat(15, auto);
+        grid-gap: 40px 30px;
+    }
+    .searchContainer .padding{
+        padding: 0 10px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+}
+

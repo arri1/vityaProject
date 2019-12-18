@@ -175,7 +175,26 @@ body {
 .burger{
     display: none;
 }
-@media screen and (max-width: 1300px) {
+.numbersContainer{
+    height: auto;
+    align-items: center;
+    justify-content: flex-start;
+    display: flex;
+    width: 100%;
+}
+
+.numbersContainer .numbers{
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    padding-right: 5px;
+
+    color: #9FC9E8;
+}
+.numbersContainer .selected{
+    color: #4B9FDD;
+}
+@media screen and (max-width: 1300px) and (min-width: 800px) {
     .navContainer .navBlueButton {
          display: none;
     }
@@ -195,6 +214,7 @@ body {
         grid-template-columns: auto;
         grid-template-rows: auto auto;
         align-items: center;
+        grid-gap: 15px;
         width: 100%;
     }
     .bottomProperties .leftContainer {
@@ -203,5 +223,24 @@ body {
         justify-content: flex-start;
         align-items: center;
 
+    }
+}
+@media screen and (max-width: 800px) {
+    .paddingContainer {
+        width: calc(100% - 30px);
+        padding: 20px 15px;
+    }
+    .navContainer .navBlueButton {
+        display: none;
+    }
+    .navContainer .navButton{
+        display: none;
+    }
+    .burger{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        right: 20px;
     }
 }
