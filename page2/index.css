@@ -1,44 +1,4 @@
-.paddingContainer {
-    width: calc(100% - 160px);
-    padding: 20px 80px;
-}
 
-.titleContainer {
-    display: flex;
-    height: 450px;
-    align-items: center;
-    width: 100%;
-
-}
-
-.titleContainer .left {
-    display: flex;
-    flex-direction: column;
-    width: 620px;
-}
-
-.titleContainer .title {
-    font-weight: 600;
-    font-size: 36px;
-    line-height: 45px;
-    color: #1A1A1A;
-}
-
-.titleContainer .description {
-    padding-top: 20px;
-    font-size: 20px;
-    line-height: 25px;
-    color: #1A1A1A;
-
-}
-
-.titleContainer .right {
-    display: flex;
-    width: calc(100% - 620px);
-    justify-content: flex-end;
-    align-items: center;
-
-}
 
 .contentContainer {
     display: grid;
