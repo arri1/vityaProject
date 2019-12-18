@@ -1,5 +1,36 @@
-.asd{
-    background-color: black;
-    width: 200px;
-    height: 200px;
+.searchContainer {
+    width: calc(100% - 160px);
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    margin: 20px 80px;
+    flex-direction: column;
+    border-bottom: 1px solid rgba(26, 26, 26, 0.2);
+}
+
+.searchContainer .searchImage {
+    position: relative;
+    left: 0;
+}
+
+.searchContainer .searchInput {
+    display: flex;
+    height: 60px;
+    width: 100%;
+    align-items: center;
+
+}
+.searchContainer .searchCategory{
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 25px;
+    color: #606060;
+}
+.searchContainer .searchItem{
+    padding-right: 50px;
+}
+.searchContainer .selectedItem{
+    text-decoration-line: underline;
 }
