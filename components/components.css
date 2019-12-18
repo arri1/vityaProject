@@ -1,0 +1,41 @@
+body {
+    font-family: Source Sans Pro;
+}
+
+.navContainer {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    height: 90px;
+    border-bottom: 1px solid rgba(26, 26, 26, 0.2);
+
+}
+
+.navContainer .navLogo {
+    padding-left: 80px;
+}
+
+.navContainer .navButton {
+    padding-left: 50px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 25px;
+    color: #1A1A1A;
+}
+
+.navContainer .navBlueButton {
+    background: #4B9FDD;
+    border-radius: 22px;
+    width: 214px;
+    height: 44px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    display: flex;
+    right: 100px;
+    color: #FFFFFF;
+}
+
